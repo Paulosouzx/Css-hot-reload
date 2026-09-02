@@ -1,13 +1,13 @@
 # CSS Hot Reload (Dev Only)
 
-Módulo para desenvolvimento local em Drupal que atualiza o CSS na página sem dar reload, assim que o ficheiro muda no disco — como as extensões de live-reload para HTML puro.
+Módulo para desenvolvimento local em Drupal que atualiza o CSS na página sem dar reload, assim que o ficheiro muda no disco.
 
 **Não usar em produção.**
 
 ## Instalação
 
 ```bash
-ddev composer require paulosouzx/css-hot-reload:dev-main
+ddev composer require paulosouzx/css-hot-reload:1.0
 ddev drush en css_hot_reload -y
 ```
 
