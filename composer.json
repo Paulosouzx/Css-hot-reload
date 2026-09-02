@@ -1,0 +1,10 @@
+{
+  "name": "paulosouzx/css-hot-reload",
+  "description": "Local-dev-only module that reflects updated CSS without a full page reload.",
+  "type": "drupal-module",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/core": "^9 || ^10 || ^11"
+  }
+}
