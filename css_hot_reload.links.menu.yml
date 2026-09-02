@@ -1,0 +1,5 @@
+css_hot_reload.settings:
+  title: 'CSS Hot Reload'
+  description: 'Enable or disable live CSS reloading for local development.'
+  parent: system.admin_config_development
+  route_name: css_hot_reload.settings

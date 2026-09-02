@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Hooks for the CSS Hot Reload module (local dev only).
+ */
+
+/**
+ * Implements hook_page_attachments().
+ */
+function css_hot_reload_page_attachments(array &$attachments) {
+  $state = \Drupal::state();
+
+  if (!$state->get('css_hot_reload.enabled', FALSE)) {
+    return;
+  }
+
+  $attachments['#attached']['library'][] = 'css_hot_reload/hot-reload';
+  $attachments['#attached']['drupalSettings']['cssHotReload']['interval'] = $state->get('css_hot_reload.interval', 1000);
+}

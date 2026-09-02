@@ -1,0 +1,5 @@
+name: 'Css hot reload (Dev Only)'
+type: module
+description: 'Local development only: reflects updated CSS without a full page reload.'
+package: Custom
+core_version_requirement: ^9 || ^10 || ^11

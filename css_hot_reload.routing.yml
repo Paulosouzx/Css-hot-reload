@@ -1,0 +1,14 @@
+css_hot_reload.check:
+  path: '/css-hot-reload/check'
+  defaults:
+    _controller: '\Drupal\css_hot_reload\Controller\CheckController::check'
+  requirements:
+    _access: 'TRUE'
+
+css_hot_reload.settings:
+  path: '/admin/config/development/css-hot-reload'
+  defaults:
+    _form: '\Drupal\css_hot_reload\Form\SettingsForm'
+    _title: 'CSS Hot Reload settings'
+  requirements:
+    _permission: 'administer site configuration'

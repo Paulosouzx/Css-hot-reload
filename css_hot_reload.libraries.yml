@@ -1,0 +1,7 @@
+hot-reload:
+  js:
+    js/css-hot-reload.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/once
